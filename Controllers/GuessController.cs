@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using APIService.DTOs;
 using APIService.Models;
+using APIService.Services;
 namespace APIService.Controllers
 {
-
-
     [ApiController]
     [Route("api/guess")]
     public class GuessController : ControllerBase
@@ -16,6 +15,7 @@ namespace APIService.Controllers
             _repo = repo;
         }
 
+        // adds a guess to an existing gameresult as a foreign key relation
         [HttpPost]
         public async Task<IActionResult> AddGuess(GuessEntryDto dto)
         {

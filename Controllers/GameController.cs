@@ -1,10 +1,10 @@
 ﻿using APIService.DTOs;
 using APIService.Models;
+using APIService.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace APIService.Controllers
 {
-
 
     [ApiController]
     [Route("api/game")]
@@ -17,6 +17,7 @@ namespace APIService.Controllers
             _repo = repo;
         }
 
+        //creates a new game
         [HttpPost]
         public async Task<IActionResult> CreateGame(GameResultDto dto)
         {
@@ -31,12 +32,15 @@ namespace APIService.Controllers
             return Ok(new { GameId = id });
         }
 
+        //update a game with certain id
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateGame(int id, GameResultUpdateDto dto)
         {
             await _repo.UpdateGameAsync(id, dto.Attempts, dto.TimeTaken);
             return NoContent();
         }
+
+        // return all games and guesses from the database
         [HttpGet]
         public async Task<IActionResult> GetAllGames()
         {
@@ -61,8 +65,5 @@ namespace APIService.Controllers
 
             return Ok(dto);
         }
-
     }
-
-
 }

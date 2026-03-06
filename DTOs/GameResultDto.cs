@@ -6,5 +6,4 @@
         public int TargetNumber { get; set; }
         public DateTime PlayedAt { get; set; }
     }
-
 }
