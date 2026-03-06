@@ -1,6 +1,6 @@
 # API Service
 
-APIService is a Web API listening to https://localhost:7066 and http://localhost:5162 (the latter will redirect to https).
+APIService is a Web API listening to https://localhost:7066 and http://localhost:5162 (the latter will redirect to https).  </br>
 After startup, a call to https://localhost:7066 prints the welcome message: Welcome to the APIService for the ASI_GuessTheNumber game! 
 #API Calls
 GameController
