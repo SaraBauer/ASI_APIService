@@ -21,7 +21,6 @@ Entity Framework Core was used together with InMemoryDatabase to save results. <
 DTOs were used to mitigate the transfer between the API and the Database ensuring decoupling. At this stage, not auto mapping was implemented.
 
 #Installing
-
 1. Either run directly
 ```bash
 dotnet run --launch-profile https
