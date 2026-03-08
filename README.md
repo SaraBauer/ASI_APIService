@@ -27,3 +27,5 @@ dotnet run --launch-profile https
 ```
 2. Or (recommended) run in VisualStudio togehter with [ASI_GuessTheNumber](https://github.com/SaraBauer/ASI_GuessTheNumber) in one solution with multiple startup projectcs:
 <img width="793" height="280" alt="image" src="https://github.com/user-attachments/assets/26aed9fb-575d-4455-9e85-9f237258fec8" />
+
+Certificate has to be accepted in browser, so open  https://localhost:7066, and confirm the certificate.
