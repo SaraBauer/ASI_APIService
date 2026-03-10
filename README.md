@@ -6,7 +6,6 @@ After startup, a call to https://localhost:7066 prints the welcome message: Welc
 GameController
 | Call |  Methods  | Result |
 |:-----|:--------:|------:|
-
 | api/game   | HttpPost | creates a new game |
 | api/game/{id}   |  HttpPut |  updates an existing game with certain id |
 | api/game  | HttpGet |   returns all games from the database|
